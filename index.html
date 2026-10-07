@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#6f1730">
+<meta name="description" content="Karim El Shimi & Laila Fakhry — Wedding Invitation">
+<title>Karim & Laila — Wedding Invitation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="fxCanvas" aria-hidden="true"></canvas>
+<div class="light-rays" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<section class="cover" id="cover">
+  <div class="cover-inner">
+    <div class="eyebrow reveal-in">YOU ARE CORDIALLY INVITED</div>
+    <div class="ornament sparkle-heart">♥</div>
+    <h1 class="cover-names reveal-in"><span>Karim</span> <b>&amp;</b> <span>Laila</span></h1>
+    <p class="date reveal-in">08 · 11 · 2026</p>
+    <p class="cover-sub reveal-in">A beautiful evening awaits.</p>
+    <button class="open-btn magnetic" id="openBtn">Open Invitation <span>✦</span></button>
+    <p class="music-note">♪ Music will start when you open the invitation</p>
+    <p class="hint">Tap to enter</p>
+  </div>
+</section>
+
+<audio id="bgMusic" loop preload="auto"><source src="music.mp3" type="audio/mpeg"></audio>
+<button class="music-toggle" id="musicToggle" aria-label="Play music" title="Play music">♫</button>
+
+<main id="invitation" class="hidden">
+  <section class="hero section-reveal">
+    <p class="eyebrow">TO THE WEDDING OF</p>
+    <h2><span>Karim El Shimi</span><i>&amp;</i><span>Laila Fakhry</span></h2>
+    <p class="intro">We would be honored to celebrate this special day with you.</p>
+  </section>
+
+  <section class="invitation-card section-reveal">
+    <div class="card-glow"></div>
+    <p class="eyebrow">OUR WEDDING DAY</p>
+    <div class="card-names">Karim <span>&amp;</span> Laila</div>
+    <div class="gold-divider"><span>✦</span></div>
+    <p class="arabic-line">نتشرف بدعوتكم لمشاركتنا فرحتنا</p>
+    <p class="card-date">08 NOVEMBER 2026</p>
+    <p class="card-time">6:00 PM — 12:00 AM</p>
+    <p class="card-venue">Sheraton Cairo</p>
+    <p class="card-city">Cairo, Egypt</p>
+  </section>
+
+  <section class="details section-reveal">
+    <article class="detail"><div class="icon">◷</div><h3>TIME</h3><p>6:00 PM</p><small>UNTIL 12:00 AM</small></article>
+    <article class="detail"><div class="icon">⌖</div><h3>VENUE</h3><p>Sheraton Cairo</p><small>CAIRO, EGYPT</small></article>
+    <article class="detail"><div class="icon">▦</div><h3>DATE</h3><p>08 / 11 / 2026</p><small>SUNDAY</small></article>
+  </section>
+
+  <section class="countdown section-reveal" id="countdownSection">
+    <p class="eyebrow">COUNTING DOWN TO OUR DAY</p>
+    <div class="timer">
+      <div class="timer-card"><strong id="days">--</strong><span>Days</span></div>
+      <div class="timer-card"><strong id="hours">--</strong><span>Hours</span></div>
+      <div class="timer-card"><strong id="minutes">--</strong><span>Minutes</span></div>
+      <div class="timer-card"><strong id="seconds">--</strong><span>Seconds</span></div>
+    </div>
+    <p id="countdownMessage" class="countdown-message"></p>
+  </section>
+
+  <section class="location section-reveal">
+    <p class="eyebrow">THE VENUE</p>
+    <h3>Sheraton Cairo</h3>
+    <p>Galae Square, Cairo, Egypt</p>
+    <a class="location-btn ripple" href="https://www.google.com/maps/search/?api=1&query=Sheraton+Cairo+Hotel" target="_blank" rel="noopener">📍 View Location</a>
+  </section>
+
+  <section class="rsvp section-reveal">
+    <div class="rsvp-card">
+      <div class="rsvp-sparkle">✦</div>
+      <p class="eyebrow">BE PART OF OUR JOY</p>
+      <h3>Will you celebrate with us?</h3>
+      <p>Tap once to send your love and add to the celebration count.</p>
+      <button class="rsvp-btn ripple" id="rsvpBtn">♥ Confirm Attendance</button>
+      <div class="rsvp-count"><strong id="rsvpCount">—</strong><span>celebration clicks</span></div>
+      <p class="rsvp-status" id="rsvpStatus"></p>
+    </div>
+  </section>
+
+  <section class="quote section-reveal">
+    <div class="ornament">♥</div>
+    <p>Life goes on with<br>our beloved ones.</p>
+    <div class="line">────── ✦ ──────</div>
+  </section>
+
+  <footer><p>With love, Karim &amp; Laila</p><span>08 · 11 · 2026</span></footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
